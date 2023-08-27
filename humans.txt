@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Josh Goldberg      -- Developer/Content Writer  -- @handleHere
+    Dane Hillard       -- Developer  	   -- @handleHere
+    Samira Gibson      -- Developer/Brand  -- @kydkennedy
+    Tim Allen          -- Organizer        -- @handleHere
+    Jess Victor        -- Organizer        -- @handleHere
+    Jess Victor        -- Illustrator      -- https://www.linkedin.com/in/emily-schilling-3769024b/
+
+# THANKS
+
+    A big thanks to the creative folks of the city of Philadelphia for making BarCamp Philly as awesome as it is by curating such incredible talks over our ten year history. A shout out to our sponsors as well who without their support we wouldn't have the opportunity to put on such a large event every year.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    Normalize.css

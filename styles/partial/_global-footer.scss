@@ -1,0 +1,16 @@
+/*
+ * site footer
+ *
+ ************************************************************************************************/
+
+.site-footer {
+
+    @include bem-e('container') { }
+
+    @include bem-e('legal') {
+        margin-top: 20px;
+        color: color(accent, cool-dark);
+
+        p { @include font-size(16); }
+    }
+}

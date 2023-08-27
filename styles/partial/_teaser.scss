@@ -1,0 +1,33 @@
+/*
+ * teaser region
+ *
+ ************************************************************************************************/
+
+.teaser {
+
+    @include bem-e('date') {
+        @include font-size(24);
+
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    @include bem-e('location') {
+        @include font-size(18);
+
+        display: block;
+        font-weight: bold;
+    }
+}
+
+
+.day-of {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 620px;
+
+    @media (min-width: 620px) {
+        transform: rotate(3deg);
+    }
+}

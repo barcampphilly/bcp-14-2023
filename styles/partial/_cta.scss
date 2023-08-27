@@ -1,0 +1,32 @@
+/*
+ * cta
+ *
+ ************************************************************************************************/
+
+.cta {
+
+    @include bem-e('container') {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    @include bem-e('text') {
+        @include font-size(18);
+        @include line-height(18, 24);
+
+        @media (min-width: $screen-xs-min) {
+            @include font-size(26);
+            @include line-height(26, 36);
+        }
+    }
+
+    @include bem-e('connector') {
+        font-family: $brand-font;
+        line-height: 55px;
+
+        @media screen and (max-width: 619px) {
+            display: block;
+            margin: 15px 0;
+        }
+    }
+}

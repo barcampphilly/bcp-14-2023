@@ -1,0 +1,114 @@
+/*
+ * site container and grid elements
+ *
+ * grid variables located at: /styles/global/_variables
+ *
+ ************************************************************************************************/
+
+html,
+body { background-color: $site-background; }
+
+.site-container { overflow: hidden; }
+
+.bkg {
+
+    @include bem-m('primary') {
+        background-color: color(primary);
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $screen-lg-min;
+    padding-right: $grid-horizontal-padding;
+    padding-left: $grid-horizontal-padding;
+
+    @media (min-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: ($base-margin * 3);
+    }
+}
+
+
+.row {
+
+    @include bem-m('primary') {
+
+        @media (min-width: 900px) {
+            grid-column: span 12;
+        }
+    }
+
+    @include bem-m('primary-col') {
+
+        @media (min-width: 900px) {
+            grid-column: span 5;
+        }
+    }
+
+    @include bem-m('secondary-col') {
+
+        @media (min-width: 900px) {
+            grid-column: span 7;
+        }
+    }
+}
+
+
+
+
+// grid row padding
+// varaibles sourced in
+.pad-top {
+    padding-top: $grid-vertical-padding;
+
+    @include bem-m('sm') {
+        padding-top: $grid-vertical-padding / 2;
+    }
+
+    @include bem-m('lg') {
+        padding-top: $grid-vertical-padding * 3;
+    }
+}
+
+.pad-bottom {
+    padding-bottom: $grid-vertical-padding;
+
+    @include bem-m('sm') {
+        padding-bottom: $grid-vertical-padding / 2;
+    }
+
+    @include bem-m('lg') {
+        padding-bottom: $grid-vertical-padding * 3;
+    }
+}
+
+.pad-right {
+    padding-right: $grid-vertical-padding;
+
+    @include bem-m('sm') {
+        padding-right: $grid-horizontal-padding / 2;
+    }
+
+    @include bem-m('lg') {
+        padding-right: $grid-horizontal-padding * 2;
+    }
+}
+
+.pad-left {
+    padding-left: $grid-horizontal-padding;
+
+    @include bem-m('sm') {
+        padding-left: $grid-horizontal-padding / 2;
+    }
+
+    @include bem-m('lg') {
+        padding-left: $grid-horizontal-padding * 2;
+    }
+}
+.content__detail {
+    margin: 0 auto;
+    max-width: $screen-lg-min;
+}

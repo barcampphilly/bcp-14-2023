@@ -1,0 +1,61 @@
+/*
+ * accordion
+ *
+ ************************************************************************************************/
+
+.accordion {
+    margin: 0;
+
+    dd {
+        margin: $grid-vertical-padding 0;
+        padding: 0 0 0 18px;
+
+        &:last-child { margin-bottom: 0; }
+
+        *:first-child { margin-top: 0; }
+        *:last-child { margin-bottom: 0; }
+    }
+
+    dt {
+        @include font-size(24);
+
+        margin-bottom: 0;
+    }
+
+    button {
+        position: relative;
+        margin: 0;
+        border: 0;
+        padding: 0 0 0 18px;
+        background-color: transparent;
+        text-align: left;
+        text-decoration: underline;
+        color: $link-color;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &::before {
+            position: absolute;
+            top: 6px;
+            left: 0;
+            margin-right: ($base-margin / 2);
+            transition: transform $transition-duration;
+            transform: rotate(0);
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: url('../images/accordion.svg') no-repeat 0 0;
+            content: "";
+        }
+
+        &[aria-expanded="true"]::before {
+            transform: rotate(90deg);
+        }
+    }
+
+    dt:last-child { margin-bottom: 0; }
+}
