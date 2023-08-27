@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Game of Squids";
+  src: url("./game-of-squids.ttf") format("truetype");
+  src: url("./game-of-squids.otf") format("opentype");
+}
+
+:root {
+  --color-eggplant: #2E162C;
+  --color-egg-shell: #F2F2F2;
+  --color-noodle: #F2C48D;
+  --color-bloody-mary: #BF212E;
+  --color-mint: #34C397;
+
+  --font-family-serif: "Game of Squids", serif;
+  --font-family-sans-serif: "Inter", monospace;
+  --font-weight-base: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-family-heading: var(--font-family-serif);
+  --font-family-body: var(--font-family-sans-serif);
+
+  --text-shadow-base: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+ margin: 0;
+ padding: 0;
+}
+
+* + * {
+  margin-top: 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-family-heading);
+}
+
+.section {
+  background: var(--color-eggplant);
+  color: var(--color-noodle);
+  margin-top: 0;
+  padding: 4rem 3rem;
+}
+
+.section--inverted {
+  background: var(--color-mint);
+  color: var(--color-egg-shell);
+}
+
+.section--sponsors {
+  background: var(--color-bloody-mary);
+}
+
+.section__title {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-base);
+  color: var(--color-mint);
+  text-shadow: var(--text-shadow-base);
+}
+
+.section__title--inverted {
+  color: var(--color-egg-shell);
+}
+
+.footer {
+  background: var(--color-noodle);
+  margin-top: 0;
+  padding: 4rem 3rem;
+}
+
+.button {
+  background: var(--color-mint);
+  color: var(--color-egg-shell);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 42px;
+  text-shadow: var(--text-shadow-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.button--register {
+  background: var(--color-bloody-mary);
+  font-weight: var(--font-weight-semibold);
+}
