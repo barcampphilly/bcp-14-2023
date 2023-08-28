@@ -38,8 +38,8 @@
     // primary button treatment
     @include bem-m('primary') {
         border: 2px solid color(neutral, dark);
-        background-color: color(default, white);
-        color: color(accent, warm);
+        background-color: color(accents, cool-mint);
+        color: color(accent, cool-mint);
         transition: transform $transition-duration;
 
         &:focus,
@@ -48,7 +48,7 @@
 
     // BUTTON disabled state
     @include bem-m('disabled') {
-        color: color(neutral);
+        color: color(accent, cool-mint);
         pointer-events: none; /* disables the BUTTON */
         opacity: .6;
     }

@@ -5,65 +5,73 @@
  ************************************************************************************************/
 
 @font-face {
-    font-family: 'roboto_condensedlight';
-    src: url('../fonts/robotocondensed-light-webfont.woff2') format('woff2'),
-         url('../fonts/robotocondensed-light-webfont.woff') format('woff');
+    font-family: 'Inter', sans-serif;
+    src: url('../../fonts/Inter-Thin.ttf') format('ttf'),
+         url('../../fonts/Inter-Thin.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../../fonts/Inter-ExtraLight.ttf') format('ttf'),
+         url('../../fonts/Inter-ExtraLight.ttf') format('ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../../fonts/Inter-Light.ttf') format('ttf'),
+         url('../../fonts/Inter-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Regular', sans-serif;
+    src: url('../../fonts/Inter-Regular.ttf') format('ttf'),
+         url('../../fonts/Inter-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../../fonts/Inter-Medium.ttf') format('ttf'),
+         url('../../fonts/Inter-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../../fonts/Inter-SemiBold.ttf') format('ttf'),
+        url('../../fonts/Inter-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../../fonts/Inter-ExtraBold.ttf') format('ttf'),
+        url('../../fonts/Inter-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'game_of_squids';
+    src: url('../../fonts/Game\ Of\ Squids.ttf') format('tff'),
+         url('../../fonts/Game\ Of\ Squids.ttf') format('tff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'roboto_condensedlight_italic';
-    src: url('../fonts/robotocondensed-lightitalic-webfont.woff2') format('woff2'),
-         url('../fonts/robotocondensed-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto_condensedregular';
-    src: url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
-         url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto_condensedbold';
-    src: url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
-         url('../fonts/robotocondensed-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto_condenseditalic';
-    src: url('../fonts/robotocondensed-italic-webfont.woff2') format('woff2'),
-         url('../fonts/robotocondensed-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto_condensedbold_italic';
-    src: url('../fonts/robotocondensed-bolditalic-webfont.woff2') format('woff2'),
-        url('../fonts/robotocondensed-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'scheherazaderegular';
-    src: url('../fonts/scheherazade-regular-webfont.woff2') format('woff2'),
-         url('../fonts/scheherazade-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'scheherazadebold';
-    src: url('../fonts/scheherazade-bold-webfont.woff2') format('woff2'),
-         url('../fonts/scheherazade-bold-webfont.woff') format('woff');
+    font-family: 'game_of_squids';
+    src: url('../../fonts/Game\ Of\ Squids.ttf') format('tff'),
+         url('../../fonts/Game\ Of\ Squids.ttf') format('tff');
     font-weight: normal;
     font-style: normal;
 }
