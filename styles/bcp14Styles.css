@@ -1,18 +1,38 @@
-@import "global/_variables.scss";
- body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter-Regular', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #2E162C; /* $eggplant */
-    text-align: left;
-    background-color: #F2F2F2;
-    box-sizing: border-box;
-}
-* {
-    box-sizing: border-box;
-}
+@font-face {
+    font-family: "Game of Squids";
+    src: url("./game-of-squids.ttf") format("truetype");
+    src: url("./game-of-squids.otf") format("opentype");
+  }
+  
+  :root {
+    --color-eggplant: #2E162C;
+    --color-egg-shell: #F2F2F2;
+    --color-noodle: #F2C48D;
+    --color-bloody-mary: #BF212E;
+    --color-mint: #34C397;
+  
+    --font-family-serif: "Game of Squids", serif;
+    --font-family-sans-serif: "Inter", monospace;
+    --font-weight-base: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+  
+    --font-family-heading: var(--font-family-serif);
+    --font-family-body: var(--font-family-sans-serif);
+  
+    --text-shadow-base: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  * {
+   margin: 0;
+   padding: 0;
+  }
+  
+  /*
+  * + * {
+    margin-top: 1.5rem;    // Margin between sections 
+  } 
+*/
 
 /* Global Styles */
 
@@ -21,21 +41,21 @@ h1, h2, h3, h4, p {
     padding: 0;
 }
 h1 {
-    font-family: 'Game Of Squids';
+    font-family: var(--font-family-serif);
     font-size: 52px; 
     padding-top: 8%;
 }
 
 h2 {
     font-size: 30px;
-    font-family: 'Game Of Squids';
+    font-family: var(--font-family-serif);
     padding-top: 3%;
 }
 
 h4 {
     font-size: 25px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-family: var(--font-family-sans-serif);
+    font-weight: var(--font-weight-semibold);
 }
 
 /*h3 {
@@ -52,33 +72,33 @@ p {
 */
 
 .title-mint {
-    color: #34C397;
+    color: var(--color-mint);
    
 }
 
 .title-eggshell {
-    color: #F2F2F2;
+    color: var(--color-egg-shell);
 }
 
 .subtitle-mint {
-    color: #34C397;
+    color: var(--color-mint);
     
 }
 
 .subtitle-eggshell {
-    color: #F2F2F2;
+    color: var(--color-egg-shell);
 }
 
 .p-text-noodle {
-    color: #F2C48D;
+    color: var(--color-noodle);
 }
 
 .p-text-eggshell {
-    color: #F2F2F2;
+    color: var(--color-egg-shell);
 }
 
 .p-text-eggplant {
-    color: #2E162C;
+    color: var(--color-eggplant);
     padding-top: 30px;
 }
 
@@ -97,7 +117,7 @@ p {
 
 /* Hero Section */
 #bcp-hero{
-    background-color: #2E162C; /* $eggplant */
+    background-color: var(--color-eggplant); 
     height: 650px;
     width: 100%;
  }
@@ -119,7 +139,7 @@ p {
 #join {
     width: 100%;
     height: 500px;
-    background-color: #2E162C; /* $eggplant */
+    background-color: var(--color-eggplant);
     align-content: center;
 }
 
@@ -140,7 +160,7 @@ p {
 #about {
     width: 100%;
     height: 850px;
-    background-color: #34C397; /* $mint */
+    background-color: var(--color-mint); 
 }
 
 .about-text {
@@ -154,7 +174,7 @@ p {
     height: 100%;
     margin: 0 auto;
     position: relative;
-    color: #2E162C; /* $eggplant */
+    color: var(--color-eggplant); 
 }
 
 .bcp-synopsis {
@@ -195,7 +215,7 @@ p {
 #location {
     width: 100%;
     height: 1200px;
-    background-color: #2E162C; /* $eggplant */
+    background-color: var(--color-eggplant); 
 }
 
 .bcp-location {
@@ -212,7 +232,7 @@ p {
 #register {
     width: 100%;
     height: 350px;
-    background-color: #34C397; /* $mint */
+    background-color: var(--color-mint);
 }
 
 /* End Registration Section */
@@ -237,12 +257,12 @@ p {
     left: 65rem; 
     top: 541px;
     position: relative;
-    background: #BF212E; /* $bloody-mary */
+    background: var(--color-bloody-mary); 
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
     border-radius: 42px; 
     font-family: 'Inter', sans-serif; 
     font-weight: 500;
-    color: #F2F2F2; /* $egg-shell*/ 
+    color: var(--color-egg-shell);
 }
 
 .registration-btn2 {
@@ -250,12 +270,12 @@ p {
     height: 60px; 
     margin: 0 auto;
     position: relative;
-    background: #BF212E; /* $bloody-mary */
+    background: var(--color-bloody-mary);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
     border-radius: 42px; 
     font-family: 'Inter', sans-serif; 
     font-weight: 500;
-    color: #F2F2F2; /* $egg-shell*/ 
+    color: var(--color-egg-shell); 
 }
 
 .registration-btn p, .registration-btn2 p {
@@ -279,13 +299,13 @@ p {
     height: 54px; 
     margin: 0 auto;
     position: relative;
-    background: #34C397; /* $mint */
+    background: var(--color-mint); 
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
     border-radius: 42px; 
     font-size: 23px; 
     font-family: 'Inter', sans-serif; 
     font-weight: 500; 
-    color: #F2F2F2;
+    color: var(--color-egg-shell);
     padding-bottom: 20px;
 }
 
@@ -295,3 +315,64 @@ p {
     margin: 0.6rem 0 0 7rem;
     font-size: 23px; 
 }
+
+
+/* End Button Styles */
+
+
+/* 
+--Dane's Initial Styles--
+
+.logo {
+  font-family: var(--font-family-heading);
+}
+
+.section {
+  background: var(--color-eggplant);
+  color: var(--color-noodle);
+  margin-top: 0;
+  padding: 4rem 3rem;
+}
+
+.section--inverted {
+  background: var(--color-mint);
+  color: var(--color-egg-shell);
+}
+
+.section--sponsors {
+  background: var(--color-bloody-mary);
+}
+
+.section__title {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-base);
+  color: var(--color-mint);
+  text-shadow: var(--text-shadow-base);
+}
+
+.section__title--inverted {
+  color: var(--color-egg-shell);
+}
+
+.footer {
+  background: var(--color-noodle);
+  margin-top: 0;
+  padding: 4rem 3rem;
+}
+
+.button {
+  background: var(--color-mint);
+  color: var(--color-egg-shell);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 42px;
+  text-shadow: var(--text-shadow-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.button--register {
+  background: var(--color-bloody-mary);
+  font-weight: var(--font-weight-semibold);
+}
+
+*/
