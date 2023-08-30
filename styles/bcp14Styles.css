@@ -133,7 +133,6 @@ p {
     background-size: contain;
 }
 
-
 /* Join | About Section */
 
 #join {
@@ -233,6 +232,17 @@ p {
     width: 100%;
     height: 350px;
     background-color: var(--color-mint);
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* End Registration Section */
