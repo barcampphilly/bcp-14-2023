@@ -43,7 +43,7 @@ h1, h2, h3, h4, p {
 h1 {
     font-family: var(--font-family-serif);
     font-size: 52px; 
-    padding-top: 8%;
+    padding-top: 10px;
 }
 
 h2 {
@@ -71,21 +71,24 @@ p {
 }
 */
 
-.title-mint {
+.section__title {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-base);
     color: var(--color-mint);
-   
+    text-shadow: var(--text-shadow-base);
 }
 
-.title-eggshell {
+.section__title--inverted {
     color: var(--color-egg-shell);
-}
+  }
+  
 
-.subtitle-mint {
+.section__subtitle {
     color: var(--color-mint);
     
 }
 
-.subtitle-eggshell {
+.section__subtitle--inverted {
     color: var(--color-egg-shell);
 }
 
@@ -154,6 +157,7 @@ p {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    padding: 10px 10px;
 }
 
 #about {
@@ -173,7 +177,6 @@ p {
     height: 100%;
     margin: 0 auto;
     position: relative;
-    color: var(--color-eggplant); 
 }
 
 .bcp-synopsis {
@@ -261,21 +264,9 @@ p {
 
 
 /*Button Styles*/
-.registration-btn {
-    width: 348px; 
-    height: 60px; 
-    left: 65rem; 
-    top: 541px;
-    position: relative;
-    background: var(--color-bloody-mary); 
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
-    border-radius: 42px; 
-    font-family: 'Inter', sans-serif; 
-    font-weight: 500;
-    color: var(--color-egg-shell);
-}
 
-.registration-btn2 {
+
+.btn--register {
     width: 348px; 
     height: 60px; 
     margin: 0 auto;
@@ -284,46 +275,48 @@ p {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
     border-radius: 42px; 
     font-family: 'Inter', sans-serif; 
-    font-weight: 500;
     color: var(--color-egg-shell); 
+    font-weight: var(--font-weight-semibold);
 }
 
-.registration-btn p, .registration-btn2 p {
+.btn--register p {
     position: absolute; 
     text-align: center; 
-    margin: 0.8rem 0 0 3rem;
+    margin: 0.8rem 0 0 2.5rem;
     font-size: 23px; 
+    padding: 5px 0;
 }
 
-/*.registration-btn:hover {
+/*.btn--register:hover {
     
 }
 
-.registration-btn:active {
+.btn--register:active {
 
 }
 */
 
-.btn-mint {
+.btn {
     width: 290px; 
     height: 54px; 
     margin: 0 auto;
     position: relative;
-    background: var(--color-mint); 
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
-    border-radius: 42px; 
-    font-size: 23px; 
-    font-family: 'Inter', sans-serif; 
-    font-weight: 500; 
+    background: var(--color-mint);
     color: var(--color-egg-shell);
-    padding-bottom: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 42px;
+    text-shadow: var(--text-shadow-base);
+    font-weight: var(--font-weight-bold);
 }
 
-.btn-mint p {
+.btn p {
     position: absolute; 
     text-align: center; 
     margin: 0.6rem 0 0 7rem;
     font-size: 23px; 
+    padding: 5px 0;
 }
 
 
@@ -331,7 +324,7 @@ p {
 
 
 /* 
---Dane's Initial Styles--
+--Dane's Merged Styles--
 
 .logo {
   font-family: var(--font-family-heading);
@@ -353,16 +346,6 @@ p {
   background: var(--color-bloody-mary);
 }
 
-.section__title {
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-base);
-  color: var(--color-mint);
-  text-shadow: var(--text-shadow-base);
-}
-
-.section__title--inverted {
-  color: var(--color-egg-shell);
-}
 
 .footer {
   background: var(--color-noodle);
@@ -370,19 +353,6 @@ p {
   padding: 4rem 3rem;
 }
 
-.button {
-  background: var(--color-mint);
-  color: var(--color-egg-shell);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 42px;
-  text-shadow: var(--text-shadow-base);
-  font-weight: var(--font-weight-bold);
-}
 
-.button--register {
-  background: var(--color-bloody-mary);
-  font-weight: var(--font-weight-semibold);
-}
 
 */
