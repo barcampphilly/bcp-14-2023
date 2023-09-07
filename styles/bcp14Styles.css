@@ -2,7 +2,46 @@
     font-family: "Game of Squids";
     src: url("./game-of-squids.ttf") format("truetype");
     src: url("./game-of-squids.otf") format("opentype");
-  }
+}
+
+@font-face {
+    font-family:'Inter-Regular';
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Inter-Black';
+    src: url("../fonts/Inter-Black.ttf") format("truetype");
+}    
+    @font-face {
+        font-family: 'Inter-Bold';
+        src: url("../fonts/Inter-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: 'Inter-ExtraBold';
+        src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: 'Inter-ExtraLight';
+        src: url('../fonts/Inter-ExtraLight.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Inter-Light';
+        src: url('../fonts/Inter-Light.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Inter-Medium';
+        src: url('../fonts/Inter-Medium.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Inter-SemiBold';
+        src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: 'Inter-Thin';
+        src: url("../fonts/Inter-Thin.ttf") format("truetype");
+    }
+
+
         /*  */
   :root {
     --color-eggplant: #2E162C;
@@ -12,7 +51,16 @@
     --color-mint: #34C397;
   
     --font-family-serif: "Game of Squids", serif;
-    --font-family-sans-serif: "Inter", monospace;
+    --font-family-sans-serif: "Inter-Regular", monospace;
+    --font-family-sans-serif-medium: "Inter-Medium", monospace;
+    --font-family-sans-serif-thin: "Inter-Thin", monospace;
+    --font-family-sans-serif-light: "Inter-Light", monospace;
+    --font-family-sans-serif-extra-light: "Inter-ExtraLight", monospace;
+    --font-family-sans-serif-semibold: "Inter-SemiBold", monospace;
+    --font-family-sans-serif-bold: "Inter-Bold", monospace;
+    --font-family-sans-serif-extra-bold: "Inter-ExtraBold", monospace;
+    --font-family-sans-serif-black: "Inter-Black", monospace;
+
     --font-weight-base: 400;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -55,14 +103,23 @@ h2 {
 h4 {
     font-size: 25px;
     font-family: var(--font-family-sans-serif);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-base);
 }
 
+p {
+    font-family: var(--font-family-sans-serif);
+    font-weight: var(--font-weight-base);
+    font-size: 20px;
+}
 a {
     text-decoration: underline;
     color: inherit;
 }
-
+li {
+    list-style: none;
+    font-family: var(--font-family-sans-serif);
+    font-weight: var(--font-weight-semibold);
+}
 /*h3 {
 
 }
@@ -71,9 +128,7 @@ h4 {
 
 }
 
-p {
 
-}
 */
 
 
@@ -248,14 +303,30 @@ p {
 }
 
 .map {
-    height: 100%;
+    max-height: 500px;
     margin: 0 auto;
     text-align: center;
     position: absolute;
     background-image: url(../images/map.png);
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+#directions {
+    background-color: var(--color-eggplant);
+    color: var(--color-egg-shell);
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    border-radius: 42px;
+    left: 15vw;
+    text-align: left;
+    padding: 4rem 2rem;
+}
+
 
 /* End Location Section */
 
@@ -298,10 +369,11 @@ p {
     align-items: center;
     margin: 0 auto;
 }
-#organizers li {
-    list-style: none;
-    margin: 0 auto;
+
+#organizers {
+    max-width: 25vw;
 }
+
 #organizers img {
     border-radius:150px;
 }
