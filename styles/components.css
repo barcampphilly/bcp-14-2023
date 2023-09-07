@@ -46,8 +46,13 @@
   background: var(--color-eggplant);
   border-radius: 2.5rem;
   color: var(--color-egg-shell);
+  font-family: var(--font-family-sans-serif);
   padding: 2rem;
   text-align: left;
+}
+
+.card-title {
+  font-weight: 900;
 }
 
 /* Footer */
