@@ -58,6 +58,11 @@ h4 {
     font-weight: var(--font-weight-semibold);
 }
 
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
 /*h3 {
 
 }
@@ -285,6 +290,25 @@ p {
 /* Become Sponsor Section */
 
 /* Organizers Section */
+.organizer--section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+}
+#organizers li {
+    list-style: none;
+    margin: 0 auto;
+}
+#organizers img {
+    border-radius:150px;
+}
+
+/* End Organizers Section */
+
+
 
 /* Footer Section */
 
