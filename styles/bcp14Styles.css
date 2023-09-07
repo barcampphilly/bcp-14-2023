@@ -3,7 +3,7 @@
     src: url("./game-of-squids.ttf") format("truetype");
     src: url("./game-of-squids.otf") format("opentype");
   }
-  
+        /*  */
   :root {
     --color-eggplant: #2E162C;
     --color-egg-shell: #F2F2F2;
@@ -71,6 +71,19 @@ p {
 }
 */
 
+
+.section {
+  background: var(--color-eggplant);
+  color: var(--color-noodle);
+  margin-top: 0;
+  padding: 4rem 3rem;
+}
+
+.section--inverted {
+  background: var(--color-mint);
+  color: var(--color-egg-shell);
+}
+
 .section__title {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-base);
@@ -129,7 +142,6 @@ p {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    text-align: center;
     position: absolute;
     background-image: url(../images/bcp14-hero.png);
     background-repeat: no-repeat;
@@ -224,7 +236,17 @@ p {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+}
+
+.map {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* End Location Section */
@@ -234,19 +256,10 @@ p {
 #register {
     width: 100%;
     height: 350px;
-    background-color: var(--color-mint);
+    background-image: url(..images/register-bg.png);
 }
 
-.map {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-    position: absolute;
-    background-image: url(../images/map.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
 
 /* End Registration Section */
 
@@ -262,6 +275,16 @@ p {
 
 /* Footer Section */
 
+.footer {
+    background: var(--color-noodle);
+    margin-top: 0;
+    padding: 4rem 3rem;
+  }
+
+/* End of Footer Section */
+
+/* Media Queries */
+
 
 /*Button Styles*/
 
@@ -272,11 +295,13 @@ p {
     margin: 0 auto;
     position: relative;
     background: var(--color-bloody-mary);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
+    /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); */
     border-radius: 42px; 
     font-family: 'Inter', sans-serif; 
     color: var(--color-egg-shell); 
     font-weight: var(--font-weight-semibold);
+    border: none;
+    cursor: pointer;
 }
 
 .btn--register p {
@@ -301,10 +326,11 @@ p {
     height: 54px; 
     margin: 0 auto;
     position: relative;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); 
+   /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); */
     background: var(--color-mint);
     color: var(--color-egg-shell);
     border: none;
+    cursor: pointer;
     padding: 0.5rem 1rem;
     border-radius: 42px;
     text-shadow: var(--text-shadow-base);
@@ -312,9 +338,9 @@ p {
 }
 
 .btn p {
-    position: absolute; 
+    position: relative; 
     text-align: center; 
-    margin: 0.6rem 0 0 7rem;
+    margin: 0.8rem 0 rem;
     font-size: 23px; 
     padding: 5px 0;
 }
@@ -330,28 +356,13 @@ p {
   font-family: var(--font-family-heading);
 }
 
-.section {
-  background: var(--color-eggplant);
-  color: var(--color-noodle);
-  margin-top: 0;
-  padding: 4rem 3rem;
-}
-
-.section--inverted {
-  background: var(--color-mint);
-  color: var(--color-egg-shell);
-}
 
 .section--sponsors {
   background: var(--color-bloody-mary);
 }
 
 
-.footer {
-  background: var(--color-noodle);
-  margin-top: 0;
-  padding: 4rem 3rem;
-}
+
 
 
 
