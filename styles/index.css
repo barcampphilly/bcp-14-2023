@@ -59,9 +59,13 @@
   border-top: 4px dashed var(--color-mint);
   color: var(--color-egg-shell);
   background: var(--color-eggplant);
-  padding: min(10vw, 20rem);
+  padding: min(0, 1rem);
   text-align: center;
+  border-bottom: 100px solid var(--color-eggplant);
+  display: flex;
+  flex-direction: column;
 }
+
 
 /* Register Section */
 
