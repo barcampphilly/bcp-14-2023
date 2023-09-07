@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Game of Squids";
+  src: url("./game-of-squids.ttf") format("truetype");
+  src: url("./game-of-squids.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 100;
+  src: url("../fonts/Inter-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 200;
+  src: url("../fonts/Inter-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 300;
+  src: url("../fonts/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  src: url("../fonts/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 800;
+  src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  src: url("../fonts/Inter-Black.ttf") format("truetype");
+}
+
+:root {
+  --color-eggplant: #2e162c;
+  --color-egg-shell: #f2f2f2;
+  --color-noodle: #f2c48d;
+  --color-bloody-mary: #bf212e;
+  --color-mint: #34c397;
+
+  --font-family-serif: "Game of Squids", serif;
+  --font-family-sans-serif: "Inter", sans-serif;
+  --font-family-body: var(--font-family-sans-serif);
+  --font-family-heading: var(--font-family-serif);
+
+  --font-size-largest: 3.2rem;
+  --font-size-large: 2rem;
+  --font-size-medium: 1.25rem;
+
+  --font-weight-base: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --spacing-medium: 1.5rem;
+  --spacing-width-main: calc(84rem - calc(var(--spacing-medium)) * 2);
+  --spacing-width-thin: calc(56rem - calc(var(--spacing-medium)) * 2);
+
+  --box-shadow-base: 0px 1px 1px 0px rgba(0, 0, 0.25, 0.25);
+  --text-shadow-base: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
