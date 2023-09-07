@@ -103,7 +103,7 @@ h2 {
 h4 {
     font-size: 25px;
     font-family: var(--font-family-sans-serif);
-    font-weight: var(--font-weight-base);
+    font-weight: var(--font-weight-semibold);
 }
 
 p {
@@ -113,6 +113,7 @@ p {
 }
 a {
     text-decoration: underline;
+    text-underline-offset: 5px;
     color: inherit;
 }
 li {
@@ -320,11 +321,12 @@ h4 {
     color: var(--color-egg-shell);
     width: 300px;
     height: 250px;
-    position: absolute;
+    position: relative;
     border-radius: 42px;
     left: 15vw;
     text-align: left;
-    padding: 4rem 2rem;
+    padding: 3.8rem 2rem;
+    line-height: 1.5;
 }
 
 
@@ -363,19 +365,23 @@ h4 {
 /* Organizers Section */
 .organizer--section {
     display: flex;
-    flex-direction: row;
+    flex-direction: row 4fr 4fr 4fr;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 #organizers {
     max-width: 25vw;
+    padding: 20px 20px;
 }
 
 #organizers img {
     border-radius:150px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
 }
 
 /* End Organizers Section */
