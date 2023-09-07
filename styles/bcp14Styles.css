@@ -270,9 +270,7 @@ p {
     
 }
 
-.register button {
-    margin-top: 10px;
-}
+
 
 
 
@@ -345,7 +343,7 @@ p {
     border-radius: 42px;
     text-shadow: var(--text-shadow-base);
     font-weight: var(--font-weight-bold);
-    font-size: medium;
+    font-size: large;
 }
 
 .btn:hover {
