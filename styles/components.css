@@ -260,3 +260,24 @@
   height: 4rem;
   width: 4rem;
 }
+
+
+/* Navigation */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 2;
+  justify-content: center;
+  position: sticky;
+  top: 40%;
+  left: 2rem;
+}
+#menuItem {
+  background-color:  var(--color-mint);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  margin: 0.5rem;
+}
