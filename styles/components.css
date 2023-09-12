@@ -270,14 +270,26 @@
   box-sizing: border-box;
   z-index: 2;
   justify-content: center;
-  position: sticky;
+  position: fixed;
   top: 40%;
   left: 2rem;
 }
 #menuItem {
   background-color:  var(--color-mint);
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
+  margin: 0.5rem;
+  border: 1px solid var(--color-egg-shell);
+}
+
+#menuItem:hover {
+  background-color: var(--color-egg-shell);
+}
+
+.menuDivider {
+  background-color: var(--color-egg-shell);
+  width: 1px;
+  height: 1rem;
   margin: 0.5rem;
 }
