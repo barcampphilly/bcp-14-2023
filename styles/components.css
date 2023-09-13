@@ -274,22 +274,23 @@
   top: 40%;
   left: 2rem;
 }
-#menuItem {
-  background-color:  var(--color-mint);
+.menuItem {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
   margin: 0.5rem;
-  border: 1px solid var(--color-egg-shell);
+  border: 1px solid var(--color-eggplant);
+  box-shadow: var(--box-shadow-base);
+  opacity: 0.75;
 }
 
-#menuItem:hover {
-  background-color: var(--color-egg-shell);
+.menuItem:hover {
+  background-color: var(--color-mint);
+  opacity: 1;
 }
 
-.menuDivider {
-  background-color: var(--color-egg-shell);
-  width: 1px;
-  height: 1rem;
-  margin: 0.5rem;
+.active {
+  background-color: var(--color-mint);
+  opacity: 1;
 }
+
