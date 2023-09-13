@@ -115,13 +115,14 @@
 }
 
 .sponsor-group {
-  background: var(--color-noodle);
-  padding: var(--spacing-medium) 0;
+  background: var(--color-white);
+  padding: 0.25rem 0 0.25rem 0;
 }
 
 .sponsor-group-title {
   background: var(--color-bloody-mary);
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 0 0 0.25rem 0;
 }
 
 /* Become A Sponsor Section */
