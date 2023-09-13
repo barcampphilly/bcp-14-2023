@@ -59,6 +59,7 @@
 }
 
 :root {
+  --color-white: #ffffff;
   --color-eggplant: #2e162c;
   --color-egg-shell: #f2f2f2;
   --color-noodle: #f2c48d;

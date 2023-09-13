@@ -115,13 +115,14 @@
 }
 
 .sponsor-group {
-  background: var(--color-noodle);
-  padding: var(--spacing-medium) 0;
+  background: var(--color-white);
+  padding: 0.5rem 0 0.5rem 0;
 }
 
 .sponsor-group-title {
   background: var(--color-bloody-mary);
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 0 0 1rem 0;
 }
 
 /* Become A Sponsor Section */
@@ -206,4 +207,11 @@
     min-width: initial;
     width: calc(50% - 1rem);
   }
+}
+
+/* Responsive Images for Sponsor Logos */
+.responsive {
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
