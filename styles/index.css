@@ -208,3 +208,10 @@
     width: calc(50% - 1rem);
   }
 }
+
+/* Responsive Images for Sponsor Logos */
+.responsive {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
