@@ -74,6 +74,10 @@
   flex-direction: column;
 }
 
+.nearby-proximity {
+  max-height: max(50rem, 50vw);
+}
+
 /* Register Section */
 
 .section--register {
