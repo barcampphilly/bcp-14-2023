@@ -46,34 +46,50 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/components.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <!--js interactive-->
-    <link rel="javascript" href="js/index.js" />
   </head>
 
   <body>
     <main class="section">
       <nav class="menu">
-       <a href="#home"><button class="menuItem"></button></a>
-       <a href="#about"><button class="menuItem"></button></a>
-       <a href="#location"><button class="menuItem"></button></a>
-       <a href="#schedule"><button class="menuItem"></button></a>
-       <a href="#sponsors"><button class="menuItem"></button></a>
-       <a href="#organizers"><button class="menuItem"></button></a>
+        <a class="menu-item" href="#home">
+          <span class="menu-item-contents">Home</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#about">
+          <span class="menu-item-contents">About</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#location">
+          <span class="menu-item-contents">Location</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#schedule">
+          <span class="menu-item-contents">Schedule</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#sponsors">
+          <span class="menu-item-contents">Sponsors</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#organizers">
+          <span class="menu-item-contents">Organizers</span>
+        </a>
       </nav>
       <section class="section section--hero" id="home">
         <div class="section-contents">
-          <a href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM" target="_blank">
-            <button class="button button--primary section--hero--button-primary">
+          <a
+            href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM"
+            target="_blank"
+          >
+            <button class="button section--hero--button-primary">
               Get My BarCamp 14 Tickets!
             </button>
           </a>
         </div>
       </section>
 
-      <section class="section section--explainer" id="explainer">
-        <div
-          class="section-contents section-contents--thin section-contents--explainer"
-        >
+      <section class="section section--home">
+        <div class="section-contents section-contents--home">
           <h1 class="heading-primary">BarCamp 14</h1>
           <div class="heading-secondary">Saturday, November 18th</div>
           <p class="text-body text-body--medium">
@@ -82,23 +98,31 @@
             connection-making than ever before. Share your thoughts, questions,
             and experiences with your fellow BarCampers.
           </p>
-          <div class="share-links">
+          <div class="share-links share-links--home">
             <a
-              class="button button--secondary share-link"
+              class="button share-link"
               href="https://linkedin.com/sharing/share-offsite/?url=http%3A%2F%2F2023.barcampphilly.org"
               rel="noopener nofollow"
               target="_blank"
             >
-              <img alt="" class="share-link-icon" src="images/icons/linkedin.svg" />
+              <img
+                alt=""
+                class="share-link-icon"
+                src="images/icons/linkedin.svg"
+              />
               Share on LinkedIn
             </a>
             <a
-              class="button button--secondary share-link"
+              class="button share-link"
               href="https://twitter.com/intent/tweet?url=http%3A%2F%2F2023.barcampphilly.org&text=INSERT%20TEXT%20HERE%20YIPPEE&hashtags=apple%2Cbanana"
               rel="noopener nofollow"
               target="_blank"
             >
-              <img alt="" class="share-link-icon" src="images/icons/twitter.svg" />
+              <img
+                alt=""
+                class="share-link-icon"
+                src="images/icons/twitter.svg"
+              />
               Share on Twitter
             </a>
           </div>
@@ -159,21 +183,24 @@
       </section>
 
       <section class="map" id="map">
-        <div class="section-contents section-contents--thin">
+        <div class="section-contents">
           <div class="card card--map">
             <p class="card-title">Jon M, Huntsman Hall</p>
             <p>3730 Walnut Street,<br />Philadelphia, PA 19104</p>
             <p>
-              <a class="anchor-inline" href="https://goo.gl/maps/uwd1XsRXiUKeUEy96" target="_blank">Get Directions</a>
+              <a
+                class="anchor-inline"
+                href="https://goo.gl/maps/uwd1XsRXiUKeUEy96"
+                target="_blank"
+                >Get Directions</a
+              >
             </p>
           </div>
         </div>
       </section>
 
       <section class="section" id="location">
-        <div
-          class="section-contents section-contents--thin section-contents--location"
-        >
+        <div class="section-contents section-contents--location">
           <h2 class="heading-primary">Location</h2>
           <p class="text-body text-body--medium">
             BarCamp Philly will be held in Jon M. Huntsman Hall at The Wharton
@@ -204,11 +231,7 @@
               </p>
             </div>
             <div class="trifold-fold">
-              <img
-                alt=""
-                class="trifold-icon"
-                src="images/parking.svg"
-              />
+              <img alt="" class="trifold-icon" src="images/parking.svg" />
               <h3 class="heading-secondary">Parking</h3>
               <p class="text-body text-body--small">
                 For anyone riding a train or regional rail to 30th Street
@@ -220,11 +243,7 @@
               </p>
             </div>
             <div class="trifold-fold">
-              <img
-                alt=""
-                class="trifold-icon"
-                src="images/sandwich.svg"
-              />
+              <img alt="" class="trifold-icon" src="images/sandwich.svg" />
               <h3 class="heading-secondary">Sustenance</h3>
               <p class="text-body text-body--small">
                 For anyone riding a train or regional rail to 30th Street
@@ -240,12 +259,19 @@
       </section>
 
       <section class="nearby section">
-          <img src="/images/barcampphilly-2023-lunch-options-2.svg" alt="Food proximity" />
+        <img
+          alt="Food proximity radius diagram. One block: Halal Food Truck NW Corner of 38th and Walnut, Mexi-Cali Burrito Truck SW Corner of 38th and Walnut. Two blocks: Sweetgreen 3925 Walnut, Jimmy John's 3925 Walnut, Bobby's Burger Palace 3925 Walnut, Chipotle 3925 Walnut, Hummus Grill 3931 Walnut."
+          class="nearby-proximity"
+          src="images/barcampphilly-2023-lunch-options-2.svg"
+        />
       </section>
 
       <section class="section section--register" id="register">
-        <a href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM" target="_blank">
-          <button class="button button--primary section--register--button-primary">
+        <a
+          href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM"
+          target="_blank"
+        >
+          <button class="button section--register--button-primary">
             Get My BarCamp 14 Tickets!
           </button>
         </a>
@@ -267,9 +293,7 @@
       </section>
 
       <section class="section" id="schedule">
-        <div
-          class="section-contents section-contents--thin section-contents--schedule"
-        >
+        <div class="section-contents section-contents--schedule">
           <h2 class="heading-primary">Schedule</h2>
           <p class="text-body">
             It's an action packed day that starts early, so get some sleep the
@@ -398,25 +422,38 @@
           <h2 class="heading-primary">Sponsors</h2>
 
           <p class="text-body">
-            The organizations below make BarCamp Philly 14 happen. We can’t thank
-            them enough. Be sure to show them some love if you see them around.
+            The organizations below make BarCamp Philly 14 happen. We can’t
+            thank them enough. Be sure to show them some love if you see them
+            around.
           </p>
         </div>
 
         <div class="sponsor-group">
           <h3 class="heading-secondary sponsor-group-title">Venue Sponsor</h3>
           <a href="https://www.wharton.upenn.edu/" target="_blank">
-            <img src="images/sponsors/wharton-100.png" class="responsive" alt="The Wharton School">
+            <img
+              src="images/sponsors/wharton-100.png"
+              class="responsive"
+              alt="The Wharton School"
+            />
           </a>
         </div>
 
         <div class="sponsor-group">
           <h3 class="heading-secondary sponsor-group-title">Lead Sponsors</h3>
           <a href="https://www.netapp.com/" target="_blank">
-            <img src="images/sponsors/netapp-100.png" class="responsive" alt="NetApp">
+            <img
+              src="images/sponsors/netapp-100.png"
+              class="responsive"
+              alt="NetApp"
+            />
           </a>
           <a href="https://www.cdillc.com/" target="_blank">
-            <img src="images/sponsors/cdi-100.png" class="responsive" alt="CDI">
+            <img
+              src="images/sponsors/cdi-100.png"
+              class="responsive"
+              alt="CDI"
+            />
           </a>
         </div>
 
@@ -425,7 +462,11 @@
             Sugar Rush & Lanyard Sponsor
           </h3>
           <a href="https://www.sealworks.com" target="_blank">
-            <img src="images/sponsors/sealworks-100.png" class="responsive" alt="SealWorks">
+            <img
+              src="images/sponsors/sealworks-100.png"
+              class="responsive"
+              alt="SealWorks"
+            />
           </a>
         </div>
 
@@ -434,7 +475,11 @@
             Caffeine Sponsor!
           </h3>
           <a href="https://www.salesforce.com" target="_blank">
-            <img src="images/sponsors/salesforce-100.png" class="responsive" alt="Salesforce">
+            <img
+              src="images/sponsors/salesforce-100.png"
+              class="responsive"
+              alt="Salesforce"
+            />
           </a>
         </div>
 
@@ -443,10 +488,18 @@
             Media Sponsor &amp; Ticket Sponsor
           </h3>
           <a href="https://technical.ly" target="_blank">
-            <img src="images/sponsors/technically-100.png" class="responsive" alt="Technical.ly">
+            <img
+              src="images/sponsors/technically-100.png"
+              class="responsive"
+              alt="Technical.ly"
+            />
           </a>
           <a href="https://www.ticketleap.com" target="_blank">
-            <img src="images/sponsors/ticketleap-100.png" class="responsive" alt="TicketLeap">
+            <img
+              src="images/sponsors/ticketleap-100.png"
+              class="responsive"
+              alt="TicketLeap"
+            />
           </a>
         </div>
 
@@ -459,7 +512,11 @@
             Luchador Sponsors
           </h3>
           <a href="https://www.fastmail.com" target="_blank">
-            <img src="images/sponsors/fastmail-100.png" class="responsive" alt="Fastmail">
+            <img
+              src="images/sponsors/fastmail-100.png"
+              class="responsive"
+              alt="Fastmail"
+            />
           </a>
         </div>
 
@@ -470,10 +527,18 @@
         <div class="sponsor-group">
           <h3 class="heading-secondary sponsor-group-title">Big Sponsors</h3>
           <a href="https://johnsandtaylor.com" target="_blank">
-            <img src="images/sponsors/johnsandtaylor-100.png" class="responsive" alt="Johns & Taylor">
+            <img
+              src="images/sponsors/johnsandtaylor-100.png"
+              class="responsive"
+              alt="Johns & Taylor"
+            />
           </a>
           <a href="https://www.revsys.com" target="_blank">
-            <img src="images/sponsors/revsys-100.png" class="responsive" alt="REVSYS">
+            <img
+              src="images/sponsors/revsys-100.png"
+              class="responsive"
+              alt="REVSYS"
+            />
           </a>
         </div>
 
@@ -483,9 +548,7 @@
             Chariot Solutions
           </a>
           |
-          <a href="https://arcwebtech.com" target="_blank">
-            Arcweb
-          </a>
+          <a href="https://arcwebtech.com" target="_blank"> Arcweb </a>
         </div>
       </section>
 
@@ -502,14 +565,10 @@
 
           <div class="become-a-sponsor-buttons">
             <a href="barcamp-philly-2023-prospectus.pdf">
-              <button class="button button--secondary">
-                Sponsorship Prospectus
-              </button>
+              <button class="button">Sponsorship Prospectus</button>
             </a>
             <a href="mailto:barcampphilly@gmail.com">
-              <button class="button button--secondary">
-                Contact Us
-              </button>
+              <button class="button">Contact Us</button>
             </a>
           </div>
         </div>
@@ -642,7 +701,11 @@
     <footer class="footer">
       <ul class="footer-links">
         <li>
-          <a href="https://www.facebook.com/barcampphilly/" target="_blank" rel="noopener nofollow">
+          <a
+            href="https://www.facebook.com/barcampphilly/"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Facebook icon"
               src="images/social/facebook.svg"
@@ -651,7 +714,11 @@
         </li>
 
         <li>
-          <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fbarcampphilly" target="_blank" rel="noopener nofollow">
+          <a
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2Fbarcampphilly"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Twitter icon"
               src="images/social/twitter.svg"
@@ -660,7 +727,11 @@
         </li>
 
         <li>
-          <a href="https://www.instagram.com/barcampphilly/?hl=en" target="_blank" rel="noopener nofollow">
+          <a
+            href="https://www.instagram.com/barcampphilly/?hl=en"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Instagram icon"
               src="images/social/instagram.svg"
@@ -669,7 +740,11 @@
         </li>
 
         <li>
-          <a href="mailto:barcampphilly@gmail.com" target="_blank" rel="noopener nofollow">
+          <a
+            href="mailto:barcampphilly@gmail.com"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Email icon"
               src="images/social/email.svg"
