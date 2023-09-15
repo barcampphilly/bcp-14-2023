@@ -2,9 +2,11 @@
 
 .section--hero {
   aspect-ratio: 1440 / 650;
+  max-height: max(20rem, 50vh);
   background-image: url(../images/bcp14-hero.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center bottom;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,11 +20,17 @@
   bottom: var(--spacing-medium);
 }
 
-/* Explainer Section */
+/* Home Section */
 
-.section-contents--explainer {
+.section-contents--home {
   align-items: center;
   flex-direction: column;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.share-links--home {
+  margin: 2rem 0 1rem;
 }
 
 /* About Section */
@@ -65,7 +73,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 /* Register Section */
 
@@ -116,13 +123,13 @@
 
 .sponsor-group {
   background: var(--color-noodle);
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 0 3.5rem;
 }
 
 .sponsor-group-title {
   background: var(--color-bloody-mary);
   padding: 0.5rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 4.5rem 0;
 }
 
 /* Become A Sponsor Section */
@@ -163,7 +170,6 @@
   display: flex;
   gap: 0.5rem;
   min-width: 17rem;
-  text-shadow: var(--text-shadow-base);
   width: 50%;
 }
 
@@ -183,8 +189,10 @@
 
 .organizer-name {
   font-family: var(--font-family-serif);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-large);
+  text-shadow: var(--text-shadow-large);
   text-transform: uppercase;
+  line-height: 1.1;
   color: var(--color-egg-shell);
 }
 
