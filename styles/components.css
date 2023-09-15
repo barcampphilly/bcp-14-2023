@@ -103,6 +103,24 @@
   color: var(--color-noodle);
 }
 
+/* Share Links */
+
+.share-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.share-link {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.share-link-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 /* Text & Related */
 
 .anchor-inline {
