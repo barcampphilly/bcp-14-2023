@@ -185,19 +185,27 @@
 }
 
 .organizer-details {
-  gap: 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 0 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .organizer-name {
+  color: var(--color-egg-shell);
   font-family: var(--font-family-serif);
   font-size: var(--font-size-large);
+  line-height: 1.1;
+  margin-bottom: -0.5rem;
   text-shadow: var(--text-shadow-large);
   text-transform: uppercase;
-  line-height: 1.1;
-  color: var(--color-egg-shell);
+  width: 100%;
+}
+
+.organizer-social-icon {
+  filter: drop-shadow(var(--text-shadow-base));
+  max-height: 20px;
+  max-width: 24px;
 }
 
 @media (min-width: 900px) {
