@@ -51,27 +51,45 @@
   <body>
     <main class="section">
       <nav class="menu">
-       <a href="#home"><div id="menuItem"></div></a>
-       <a href="#about"><div id="menuItem"></div></a>
-       <a href="#location"><div id="menuItem"></div></a>
-       <a href="#schedule"><div id="menuItem"></div></a>
-       <a href="#sponsors"><div id="menuItem"></div></a>
-       <a href="#organizers"><div id="menuItem"></div></a>
+        <a class="menu-item" href="#home">
+          <span class="menu-item-contents">Home</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#about">
+          <span class="menu-item-contents">About</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#location">
+          <span class="menu-item-contents">Location</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#schedule">
+          <span class="menu-item-contents">Schedule</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#sponsors">
+          <span class="menu-item-contents">Sponsors</span>
+        </a>
+        <div class="menu-item-spacer"></div>
+        <a class="menu-item" href="#organizers">
+          <span class="menu-item-contents">Organizers</span>
+        </a>
       </nav>
       <section class="section section--hero" id="home">
         <div class="section-contents">
-          <a href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM" target="_blank">
-            <button class="button button--primary section--hero--button-primary">
+          <a
+            href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM"
+            target="_blank"
+          >
+            <button class="button section--hero--button-primary">
               Get My BarCamp 14 Tickets!
             </button>
           </a>
         </div>
       </section>
 
-      <section class="section section--explainer" id="explainer">
-        <div
-          class="section-contents section-contents--thin section-contents--explainer"
-        >
+      <section class="section section--home">
+        <div class="section-contents section-contents--home">
           <h1 class="heading-primary">BarCamp 14</h1>
           <div class="heading-secondary">Saturday, November 18th</div>
           <p class="text-body text-body--medium">
@@ -80,7 +98,34 @@
             connection-making than ever before. Share your thoughts, questions,
             and experiences with your fellow BarCampers.
           </p>
-          <button class="button button--secondary">Share</button>
+          <div class="share-links share-links--home">
+            <a
+              class="button share-link"
+              href="https://linkedin.com/sharing/share-offsite/?url=http%3A%2F%2F2023.barcampphilly.org"
+              rel="noopener nofollow"
+              target="_blank"
+            >
+              <img
+                alt=""
+                class="share-link-icon"
+                src="images/icons/linkedin.svg"
+              />
+              Share on LinkedIn
+            </a>
+            <a
+              class="button share-link"
+              href="https://twitter.com/intent/tweet?url=http%3A%2F%2F2023.barcampphilly.org"
+              rel="noopener nofollow"
+              target="_blank"
+            >
+              <img
+                alt=""
+                class="share-link-icon"
+                src="images/icons/twitter.svg"
+              />
+              Share on Twitter
+            </a>
+          </div>
         </div>
       </section>
 
@@ -138,21 +183,24 @@
       </section>
 
       <section class="map" id="map">
-        <div class="section-contents section-contents--thin">
+        <div class="section-contents">
           <div class="card card--map">
             <p class="card-title">Jon M, Huntsman Hall</p>
             <p>3730 Walnut Street,<br />Philadelphia, PA 19104</p>
             <p>
-              <a class="anchor-inline" href="https://goo.gl/maps/uwd1XsRXiUKeUEy96" target="_blank">Get Directions</a>
+              <a
+                class="anchor-inline"
+                href="https://goo.gl/maps/uwd1XsRXiUKeUEy96"
+                target="_blank"
+                >Get Directions</a
+              >
             </p>
           </div>
         </div>
       </section>
 
       <section class="section" id="location">
-        <div
-          class="section-contents section-contents--thin section-contents--location"
-        >
+        <div class="section-contents section-contents--location">
           <h2 class="heading-primary">Location</h2>
           <p class="text-body text-body--medium">
             BarCamp Philly will be held in Jon M. Huntsman Hall at The Wharton
@@ -183,11 +231,7 @@
               </p>
             </div>
             <div class="trifold-fold">
-              <img
-                alt=""
-                class="trifold-icon"
-                src="images/parking.svg"
-              />
+              <img alt="" class="trifold-icon" src="images/parking.svg" />
               <h3 class="heading-secondary">Parking</h3>
               <p class="text-body text-body--small">
                 For anyone riding a train or regional rail to 30th Street
@@ -199,11 +243,7 @@
               </p>
             </div>
             <div class="trifold-fold">
-              <img
-                alt=""
-                class="trifold-icon"
-                src="images/sandwich.svg"
-              />
+              <img alt="" class="trifold-icon" src="images/sandwich.svg" />
               <h3 class="heading-secondary">Sustenance</h3>
               <p class="text-body text-body--small">
                 For anyone riding a train or regional rail to 30th Street
@@ -219,12 +259,19 @@
       </section>
 
       <section class="nearby section">
-          <img src="/images/barcampphilly-2023-lunch-options-2.svg" alt="Food proximity" />
+        <img
+          alt="Food proximity radius diagram. One block: Halal Food Truck NW Corner of 38th and Walnut, Mexi-Cali Burrito Truck SW Corner of 38th and Walnut. Two blocks: Sweetgreen 3925 Walnut, Jimmy John's 3925 Walnut, Bobby's Burger Palace 3925 Walnut, Chipotle 3925 Walnut, Hummus Grill 3931 Walnut."
+          class="nearby-proximity"
+          src="images/barcampphilly-2023-lunch-options-2.svg"
+        />
       </section>
 
       <section class="section section--register" id="register">
-        <a href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM" target="_blank">
-          <button class="button button--primary section--register--button-primary">
+        <a
+          href="https://barcamp-philly.ticketleap.com/barcamp-philly-14/dates/Nov-18-2023_at_0800AM"
+          target="_blank"
+        >
+          <button class="button section--register--button-primary">
             Get My BarCamp 14 Tickets!
           </button>
         </a>
@@ -246,9 +293,7 @@
       </section>
 
       <section class="section" id="schedule">
-        <div
-          class="section-contents section-contents--thin section-contents--schedule"
-        >
+        <div class="section-contents section-contents--schedule">
           <h2 class="heading-primary">Schedule</h2>
           <p class="text-body">
             It's an action packed day that starts early, so get some sleep the
@@ -377,25 +422,38 @@
           <h2 class="heading-primary">Sponsors</h2>
 
           <p class="text-body">
-            The organizations below make BarCamp Philly 14 happen. We can’t thank
-            them enough. Be sure to show them some love if you see them around.
+            The organizations below make BarCamp Philly 14 happen. We can’t
+            thank them enough. Be sure to show them some love if you see them
+            around.
           </p>
         </div>
 
         <div class="sponsor-group">
           <h3 class="heading-secondary sponsor-group-title">Venue Sponsor</h3>
           <a href="https://www.wharton.upenn.edu/" target="_blank">
-            <img src="images/sponsors/wharton-100.png" class="responsive" alt="The Wharton School">
+            <img
+              src="images/sponsors/wharton-100.png"
+              class="responsive"
+              alt="The Wharton School"
+            />
           </a>
         </div>
 
         <div class="sponsor-group">
           <h3 class="heading-secondary sponsor-group-title">Lead Sponsors</h3>
           <a href="https://www.netapp.com/" target="_blank">
-            <img src="images/sponsors/netapp-100.png" class="responsive" alt="NetApp">
+            <img
+              src="images/sponsors/netapp-100.png"
+              class="responsive"
+              alt="NetApp"
+            />
           </a>
           <a href="https://www.cdillc.com/" target="_blank">
-            <img src="images/sponsors/cdi-100.png" class="responsive" alt="CDI">
+            <img
+              src="images/sponsors/cdi-100.png"
+              class="responsive"
+              alt="CDI"
+            />
           </a>
         </div>
 
@@ -404,7 +462,11 @@
             Sugar Rush & Lanyard Sponsor
           </h3>
           <a href="https://www.sealworks.com" target="_blank">
-            <img src="images/sponsors/sealworks-100.png" class="responsive" alt="SealWorks">
+            <img
+              src="images/sponsors/sealworks-100.png"
+              class="responsive"
+              alt="SealWorks"
+            />
           </a>
         </div>
 
@@ -413,7 +475,11 @@
             Caffeine Sponsor!
           </h3>
           <a href="https://www.salesforce.com" target="_blank">
-            <img src="images/sponsors/salesforce-100.png" class="responsive" alt="Salesforce">
+            <img
+              src="images/sponsors/salesforce-100.png"
+              class="responsive"
+              alt="Salesforce"
+            />
           </a>
         </div>
 
@@ -422,10 +488,18 @@
             Media Sponsor &amp; Ticket Sponsor
           </h3>
           <a href="https://technical.ly" target="_blank">
-            <img src="images/sponsors/technically-100.png" class="responsive" alt="Technical.ly">
+            <img
+              src="images/sponsors/technically-100.png"
+              class="responsive"
+              alt="Technical.ly"
+            />
           </a>
           <a href="https://www.ticketleap.com" target="_blank">
-            <img src="images/sponsors/ticketleap-100.png" class="responsive" alt="TicketLeap">
+            <img
+              src="images/sponsors/ticketleap-100.png"
+              class="responsive"
+              alt="TicketLeap"
+            />
           </a>
         </div>
 
@@ -438,7 +512,11 @@
             Luchador Sponsors
           </h3>
           <a href="https://www.fastmail.com" target="_blank">
-            <img src="images/sponsors/fastmail-100.png" class="responsive" alt="Fastmail">
+            <img
+              src="images/sponsors/fastmail-100.png"
+              class="responsive"
+              alt="Fastmail"
+            />
           </a>
         </div>
 
@@ -449,21 +527,36 @@
         <div class="sponsor-group">
           <h3 class="heading-secondary sponsor-group-title">Big Sponsors</h3>
           <a href="https://johnsandtaylor.com" target="_blank">
-            <img src="images/sponsors/johnsandtaylor-100.png" class="responsive" alt="Johns & Taylor">
+            <img
+              src="images/sponsors/johnsandtaylor-100.png"
+              class="responsive"
+              alt="Johns & Taylor"
+            />
           </a>
           <a href="https://www.revsys.com" target="_blank">
-            <img src="images/sponsors/revsys-100.png" class="responsive" alt="REVSYS">
+            <img
+              src="images/sponsors/revsys-100.png"
+              class="responsive"
+              alt="REVSYS"
+            />
           </a>
         </div>
 
         <div class="sponsor-group">
           <h3 class="heading-secondary sponsor-group-title">Solo Sponsors</h3>
           <a href="https://chariotsolutions.com" target="_blank">
-            Chariot Solutions
+            <img
+              src="/images/sponsors/chariot-solutions-100.png"
+              class="responsive"
+              alt="Chariot Solutions"
+            />
           </a>
-          |
           <a href="https://arcwebtech.com" target="_blank">
-            Arcweb
+            <img
+              src="images/sponsors/arcweb-100.png"
+              class="responsive"
+              alt="Arcweb"
+            />
           </a>
         </div>
       </section>
@@ -481,14 +574,10 @@
 
           <div class="become-a-sponsor-buttons">
             <a href="barcamp-philly-2023-prospectus.pdf">
-              <button class="button button--secondary">
-                Sponsorship Prospectus
-              </button>
+              <button class="button">Sponsorship Prospectus</button>
             </a>
             <a href="mailto:barcampphilly@gmail.com">
-              <button class="button button--secondary">
-                Contact Us
-              </button>
+              <button class="button">Contact Us</button>
             </a>
           </div>
         </div>
@@ -511,35 +600,34 @@
               <img
                 alt="Photo of Tim Allen"
                 class="organizer-photo"
-                src="https://ca.slack-edge.com/T03EC6Y4U-U0NG2H5CZ-b5e1e92fe667-512"
+                src="images/organizers/tim-allen.jpg"
               />
               <div class="organizer-details">
                 <div class="organizer-name">Tim Allen</div>
                 <a
                   class="organizer-social"
+                  href="https://pyphilly.org"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Globe icon"
+                    class="organizer-social-icon"
+                    src="images/icons/globe.svg"
+                  />
+                </a>
+                <a
+                  class="organizer-social"
                   href="https://twitter.com/FlipperPA"
                   target="_blank"
                   rel="noopener nofollow"
-                  >@flipperpa</a
                 >
-              </div>
-            </li>
-
-            <li class="organizer">
-              <img
-                alt="Photo of Josh Goldberg"
-                class="organizer-photo"
-                src="https://www.joshuakgoldberg.com/images/speaking-dark.webp"
-              />
-              <div class="organizer-details">
-                <div class="organizer-name">Josh Goldberg</div>
-                <a
-                  class="organizer-social"
-                  href="https://twitter.com/JoshuaKGoldberg"
-                  target="_blank"
-                  rel="noopener nofollow"
-                  >@JoshuaKGoldberg</a
-                >
+                  <img
+                    aria-label="Twitter icon"
+                    class="organizer-social-icon"
+                    src="images/icons/twitter.svg"
+                  />
+                </a>
               </div>
             </li>
 
@@ -547,17 +635,69 @@
               <img
                 alt="Photo of Samira Gibson"
                 class="organizer-photo"
-                src="https://media.licdn.com/dms/image/D4E03AQHBkdNmWy_Ang/profile-displayphoto-shrink_800_800/0/1691089615869?e=1699488000&v=beta&t=W4BIT6rTrJ035Hu3cByn3Q6BFro93DaH3epxm0RmAMU"
+                src="images/organizers/samira-gibson.jpg"
               />
               <div class="organizer-details">
                 <div class="organizer-name">Samira Gibson</div>
                 <a
                   class="organizer-social"
-                  href=""
+                  href="https://samiragibson.net"
                   target="_blank"
                   rel="noopener nofollow"
-                  >@kydkennedy</a
                 >
+                  <img
+                    aria-label="Globe icon"
+                    class="organizer-social-icon"
+                    src="images/icons/globe.svg"
+                  />
+                </a>
+                <a
+                  class="organizer-social"
+                  href="https://instagram.com/kydkennedy"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Instagram icon"
+                    class="organizer-social-icon"
+                    src="images/icons/instagram.svg"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="organizer">
+              <img
+                alt="Photo of Josh Goldberg"
+                class="organizer-photo"
+                src="images/organizers/josh-goldberg.jpg"
+              />
+              <div class="organizer-details">
+                <div class="organizer-name">Josh Goldberg</div>
+                <a
+                  class="organizer-social"
+                  href="https://joshuakgoldberg.com"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Globe icon"
+                    class="organizer-social-icon"
+                    src="images/icons/globe.svg"
+                  />
+                </a>
+                <a
+                  class="organizer-social"
+                  href="https://twitter.com/JoshuaKGoldberg"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Twitter icon"
+                    class="organizer-social-icon"
+                    src="images/icons/twitter.svg"
+                  />
+                </a>
               </div>
             </li>
 
@@ -570,11 +710,29 @@
               <div class="organizer-details">
                 <div class="organizer-name">Dane Hillard</div>
                 <a
+                  class="organizer-social"
+                  href="https://dane.engineering/"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Globe icon"
+                    class="organizer-social-icon"
+                    src="images/icons/globe.svg"
+                  />
+                </a>
+                <a
+                  class="organizer-social"
                   href="https://twitter.com/easyaspython"
                   target="_blank"
                   rel="noopener nofollow"
-                  >@easyaspython</a
                 >
+                  <img
+                    aria-label="Twitter icon"
+                    class="organizer-social-icon"
+                    src="images/icons/twitter.svg"
+                  />
+                </a>
               </div>
             </li>
 
@@ -582,17 +740,34 @@
               <img
                 alt="Photo of Jessica Victor"
                 class="organizer-photo"
-                src="https://images.squarespace-cdn.com/content/v1/5a75eafe6957da992cae5ab7/1521323119571-EG0ITWO64382S1EKOY62/14-Jessica-Victor-Small.jpg?format=2500w"
+                src="images/organizers/jessica-victor.jpg"
               />
               <div class="organizer-details">
                 <div class="organizer-name">Jessica Victor</div>
                 <a
                   class="organizer-social"
-                  href="https://www.jessicavictor.com/"
+                  href="https://www.jessicavictor.com"
                   target="_blank"
                   rel="noopener nofollow"
-                  >@handle</a
                 >
+                  <img
+                    aria-label="Globe icon"
+                    class="organizer-social-icon"
+                    src="images/icons/globe.svg"
+                  />
+                </a>
+                <a
+                  class="organizer-social"
+                  href="https://www.instagram.com/jvictorious_"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Instagram icon"
+                    class="organizer-social-icon"
+                    src="images/icons/instagram.svg"
+                  />
+                </a>
               </div>
             </li>
 
@@ -600,10 +775,45 @@
               <img
                 alt="Photo of Harper Yatvin"
                 class="organizer-photo"
-                src="https://placehold.it/250x250"
+                src="images/organizers/harper-yatvin.jpg"
               />
               <div class="organizer-details">
                 <div class="organizer-name">Harper Yatvin</div>
+                <a
+                  class="organizer-social"
+                  href="https://www.instagram.com/harperyatvin"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Instagram icon"
+                    class="organizer-social-icon"
+                    src="images/icons/instagram.svg"
+                  />
+                </a>
+                <a
+                  class="organizer-social"
+                  href="https://www.twitter.com/hyatvin"
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  <img
+                    aria-label="Twitter icon"
+                    class="organizer-social-icon"
+                    src="images/icons/twitter.svg"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="organizer">
+              <img
+                alt="Photo of Dawn Wages"
+                class="organizer-photo"
+                src="https://placehold.it/250x250"
+              />
+              <div class="organizer-details">
+                <div class="organizer-name">Dawn Wages</div>
                 <a
                   class="organizer-social"
                   href=""
@@ -613,6 +823,79 @@
                 >
               </div>
             </li>
+
+            <li class="organizer">
+              <img
+                alt="Photo of Joe Campbell"
+                class="organizer-photo"
+                src="https://placehold.it/250x250"
+              />
+              <div class="organizer-details">
+                <div class="organizer-name">Joe Campbell</div>
+                <a
+                  class="organizer-social"
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow"
+                  >@handle</a
+                >
+              </div>
+            </li>
+
+            <li class="organizer">
+              <img
+                alt="Photo of James M."
+                class="organizer-photo"
+                src="https://placehold.it/250x250"
+              />
+              <div class="organizer-details">
+                <div class="organizer-name">James M.</div>
+                <a
+                  class="organizer-social"
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow"
+                  >@handle</a
+                >
+              </div>
+            </li>
+
+            <li class="organizer">
+              <img
+                alt="Photo of JM Conway"
+                class="organizer-photo"
+                src="https://placehold.it/250x250"
+              />
+              <div class="organizer-details">
+                <div class="organizer-name">JM Conway</div>
+                <a
+                  class="organizer-social"
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow"
+                  >@handle</a
+                >
+              </div>
+            </li>
+
+            <li class="organizer">
+              <img
+                alt="Photo of Antonio"
+                class="organizer-photo"
+                src="https://placehold.it/250x250"
+              />
+              <div class="organizer-details">
+                <div class="organizer-name">Antonio</div>
+                <a
+                  class="organizer-social"
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow"
+                  >@handle</a
+                >
+              </div>
+            </li>
+
           </ul>
         </div>
       </section>
@@ -621,7 +904,11 @@
     <footer class="footer">
       <ul class="footer-links">
         <li>
-          <a href="" target="_blank" rel="noopener nofollow">
+          <a
+            href="https://www.facebook.com/barcampphilly/"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Facebook icon"
               src="images/social/facebook.svg"
@@ -630,7 +917,11 @@
         </li>
 
         <li>
-          <a href="" target="_blank" rel="noopener nofollow">
+          <a
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2Fbarcampphilly"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Twitter icon"
               src="images/social/twitter.svg"
@@ -639,7 +930,11 @@
         </li>
 
         <li>
-          <a href="" target="_blank" rel="noopener nofollow">
+          <a
+            href="https://www.instagram.com/barcampphilly/?hl=en"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Instagram icon"
               src="images/social/instagram.svg"
@@ -648,7 +943,11 @@
         </li>
 
         <li>
-          <a href="" target="_blank" rel="noopener nofollow">
+          <a
+            href="mailto:barcampphilly@gmail.com"
+            target="_blank"
+            rel="noopener nofollow"
+          >
             <img
               alt="Email icon"
               src="images/social/email.svg"

@@ -2,9 +2,11 @@
 
 .section--hero {
   aspect-ratio: 1440 / 650;
+  max-height: max(20rem, 50vh);
   background-image: url(../images/bcp14-hero.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center bottom;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,11 +20,17 @@
   bottom: var(--spacing-medium);
 }
 
-/* Explainer Section */
+/* Home Section */
 
-.section-contents--explainer {
+.section-contents--home {
   align-items: center;
   flex-direction: column;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.share-links--home {
+  margin: 2rem 0 1rem;
 }
 
 /* About Section */
@@ -66,6 +74,9 @@
   flex-direction: column;
 }
 
+.nearby-proximity {
+  max-height: max(50rem, 50vw);
+}
 
 /* Register Section */
 
@@ -115,14 +126,14 @@
 }
 
 .sponsor-group {
-  background: var(--color-white);
-  padding: 0.5rem 0 0.5rem 0;
+  background: var(--color-noodle);
+  padding: 0.5rem 0 3.5rem;
 }
 
 .sponsor-group-title {
   background: var(--color-bloody-mary);
   padding: 0.5rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 4.5rem 0;
 }
 
 /* Become A Sponsor Section */
@@ -163,7 +174,6 @@
   display: flex;
   gap: 0.5rem;
   min-width: 17rem;
-  text-shadow: var(--text-shadow-base);
   width: 50%;
 }
 
@@ -175,17 +185,27 @@
 }
 
 .organizer-details {
-  gap: 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 0 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .organizer-name {
-  font-family: var(--font-family-serif);
-  font-size: var(--font-size-medium);
-  text-transform: uppercase;
   color: var(--color-egg-shell);
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-large);
+  line-height: 1.1;
+  margin-bottom: -0.5rem;
+  text-shadow: var(--text-shadow-large);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.organizer-social-icon {
+  filter: drop-shadow(var(--text-shadow-base));
+  max-height: 20px;
+  max-width: 24px;
 }
 
 @media (min-width: 900px) {
@@ -214,4 +234,5 @@
   max-width: 100%;
   height: auto;
   border: 0;
+  padding: 0 20px;
 }
