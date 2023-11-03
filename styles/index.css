@@ -61,6 +61,12 @@
   flex-direction: column;
 }
 
+/* Lunch Section */
+
+.section-contents--lunch {
+  flex-direction: column;
+}
+
 /* Nearby Pseudo-Section */
 
 .nearby {
